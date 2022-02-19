@@ -19,7 +19,7 @@ def talk_to_me(update, context):
     print (text)
     update.message.reply_text(text)
     user = update.message.from_user
-    print('Ты разговариваешь с {} and его ID: {} '.format(user['username'], user['id']))
+    print('Ты разговариваешь с {} and ег ID: {} '.format(user['username'], user['id']))
 
 def main():
     mybot = Updater(settings.API_KEY, use_context=True, request_kwargs=PROXY)
